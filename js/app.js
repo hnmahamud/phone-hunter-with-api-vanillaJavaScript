@@ -1,5 +1,4 @@
 const getInputValue = () => {
-    const searchInput = document.getElementById('search-input');
     return searchInput.value;
 }
 
@@ -51,5 +50,11 @@ const getItems = (dataLimit) => {
         showAllBtn.classList.add('hidden');
     }
 }
+
+searchInput.addEventListener('keyup', (event) => {
+    if(event.key === 'Enter') {
+        getItems(9);
+    }
+})
 
 // loadItems('apple', 10);

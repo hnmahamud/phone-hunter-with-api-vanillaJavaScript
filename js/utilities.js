@@ -2,6 +2,7 @@ const loader = document.getElementById('loader');
 const alert = document.getElementById('alert');
 const itemsContainer = document.getElementById('items-container');
 const showAllBtn = document.getElementById('show-all-btn');
+const searchInput = document.getElementById('search-input');
 
 const displayItems = async (phones, dataLimit) => {
     itemsContainer.innerHTML = '';
